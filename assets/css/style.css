@@ -17,6 +17,8 @@ main{
     height: 100%;  
 }
 
+
+/* for get to top */
 #go_to_top{
     position: fixed;
     top: 87%;
@@ -36,6 +38,8 @@ main{
     transition: all .3s;
 }
 
+
+/* header section start */
 header{
     width: 100%;
     padding: 50px 80px 5px 80px;
@@ -145,6 +149,8 @@ header{
     font-size: 15px;
 }
 
+
+/* nav section start */
 .nav_section{
     width: 100%;
     display: flex;
@@ -195,6 +201,8 @@ header{
     color: rgba(140, 226, 255, 0.992);
 }
 
+
+/* for dropdown list in nav */
 .nav_section nav .nav_container li .dropdown_list{
     position: absolute;
     top: 100%;
@@ -252,6 +260,7 @@ header{
     animation: navdropdownmove .5s ease forwards;
 }
 
+/* for second li nav dropdown */
 .shared_dropdown_list{
     position: absolute;
     top: 100%;
@@ -356,6 +365,8 @@ header{
     color: rgb(150, 150, 150);
 }
 
+
+/* nav section customer portal button */
 .nav_section button{
     background-color:deeppink;
     color: white;
@@ -377,6 +388,7 @@ header{
 }
 
 
+/* banner section start */
 .banner{
     width: 100%;
     display: flex;
@@ -438,12 +450,13 @@ header{
     width: 500px;
 }
 
+
+/* all plan section start*/
 .all_plan_container{
     width: 100%;
     padding: 20px 80px;
     background-color: rgb(235, 235, 235);
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .all_plan_text_container{
@@ -501,6 +514,8 @@ header{
     margin-right: 5px;
 }
 
+
+/* webhost plan section start */
 .webhost_plan_container{
     width: 100%;
     margin-top: 100px;
@@ -639,6 +654,8 @@ header{
     background-color: deeppink;
 }
 
+
+/* powerfull server section */
 .powerfull_server{
     margin-top: 90px;
     display: flex;
@@ -685,6 +702,8 @@ header{
     width: 500px;
 }
 
+
+/* all tool section start */
 .all_tool_section{
     background: linear-gradient(rgba(0, 162, 255, 0.800),rgba(0, 162, 255, 0.800)), url(../img/bg-parallax1.jpg);
     background-size: cover;
@@ -799,6 +818,8 @@ header{
     margin-left: 5px;
 }
 
+
+/* testimonal section start */
 .testimonal_section{
     margin-top: 50px;
     display: flex;
@@ -878,6 +899,8 @@ header{
     cursor: pointer;
 }
 
+
+/* get start section */
 .get_start_section{
     margin-top: 50px;
     background-color: rgba(255,20,47,.8); 
@@ -957,6 +980,8 @@ header{
     color: rgba(255, 196, 203, 0.8);
 }
 
+
+/* footer section start */
 footer{
     background-color: rgb(54, 54, 54);
     padding: 60px;
@@ -1035,7 +1060,13 @@ footer{
     margin-top: 6px;
 }
 
+
+
+/* screen responsive for tablet from width 768px to 992px */
+
 @media screen and (min-width:768px) and (max-width:992px) {
+    
+    /* header section */
     header{
         padding: 50px 30px 5px 30px;
     }
@@ -1071,6 +1102,8 @@ footer{
         justify-content: space-between;
     }
 
+
+    /* nav section */
     .nav_section nav .nav_container{
         display: none;
     }
@@ -1080,6 +1113,7 @@ footer{
         font-size: 12px;
     }
 
+    /* menu button and nav section */
     .nav_section nav .menu_bar_icon{
         display: block;
         font-size: 30px;
@@ -1089,6 +1123,8 @@ footer{
         cursor: pointer;
     }
 
+
+    /* banner section */
     .banner{
         padding: 45px 35px;
     }
@@ -1097,6 +1133,7 @@ footer{
         width: 330px;
     }
 
+    /* all plan section */
     .all_plan_container{
         padding: 20px 35px;
         flex-direction: column;
@@ -1139,6 +1176,8 @@ footer{
         height: 60px;
     }
 
+
+    /* web host section */
     .web_host_plan_box_container{
         gap: 28px;
     }
@@ -1155,6 +1194,8 @@ footer{
         top: -12%;
     }
 
+
+    /* powerfull server section */
     .powerfull_server{
         padding: 0px 40px;
     }
@@ -1181,6 +1222,8 @@ footer{
         width: 330px;
     }
 
+
+    /* all tool section */
     .all_tool_container{
         flex-wrap: wrap;
     }
@@ -1194,7 +1237,7 @@ footer{
         margin-top: 50px;
     }
 
-
+    /* testimonal section */
     .testimonal_container{
         width: 550px;
     }
@@ -1211,6 +1254,8 @@ footer{
         right: -15%;
     }
 
+
+    /* get start section */
     .get_start_section{
         padding: 35px;
     }
@@ -1237,6 +1282,8 @@ footer{
         font-size: 25px;
     }
 
+
+    /* footer section */
     footer{
         padding: 55px 30px;
     }
@@ -1249,15 +1296,21 @@ footer{
 
 
 
+/* responsive screen from 992px to 1120px  */
+
 @media screen and (min-width:992px) and (max-width:1120px) {
+    
+    /* header section */
     header{
         padding: 50px 40px 5px 40px;
     }
-
+    
+    /* nav section */
     .nav_section nav .nav_container > li{
         margin: 0px 14px;
     }
 
+    /* all plan section */
     .all_plan_container{
         padding: 20px;
     }
@@ -1266,6 +1319,7 @@ footer{
         margin-left: 30px;
     }
 
+    /* web host section */
     .web_host_plan_box{
         width: 285px;
     }
@@ -1275,6 +1329,7 @@ footer{
         top: -13%;
     }
 
+    /* powerfull server section */
     .powerfull_server{
         padding: 0px 50px;
     }
@@ -1283,6 +1338,7 @@ footer{
         width: 420px;
     }
 
+    /* all plan section */
     .all_tool_section{
         padding: 60px 20px;
     }
@@ -1291,10 +1347,14 @@ footer{
         padding: 20px;
     }
 
+
+    /* get start section */
     .get_start_section{
         padding: 40px 35px;
     }
 
+
+    /* footer section */
     footer{
         padding: 50px 30px;
     }
@@ -1304,13 +1364,18 @@ footer{
     }
 }
 
+
+/* responsive screen for mobile from width 340px 767px */
+
 @media screen and (min-width:340px) and (max-width:767px) {
     
+    /* get to top button */
     #go_to_top {
         width: 50px;
         height: 50px;
     }
     
+    /* header section */
     header{
         padding: 50px 20px 5px 20px;
     }
@@ -1373,6 +1438,7 @@ footer{
         flex-wrap: wrap;
     }
 
+    /* nav section section */
     .nav_section{
         padding: 0px 25px
     }
@@ -1381,12 +1447,15 @@ footer{
         display: none;
     }
 
+    /* nav section customer portal button */
     .nav_section nav button{
         padding: 20px 0px;
         font-size: 12px;
         width: 130px;
     }
 
+
+    /* manu btn and nav section */
     .nav_section nav .menu_bar_icon{
         display: block;
         font-size: 26px;
@@ -1396,6 +1465,7 @@ footer{
         cursor: pointer;
     }
 
+    /* banner section */
     .banner{
         padding: 45px 35px;
     }
@@ -1424,7 +1494,7 @@ footer{
         display: none;
     }
 
-
+    /* all plan section */
     .all_plan_container{
         padding: 20px 35px;
         flex-direction: column;
@@ -1471,6 +1541,7 @@ footer{
         text-align: center;
     }
 
+    /* web host section */
     .web_host_plan_box_container{
         gap: 60px;
         flex-direction: column;
@@ -1497,6 +1568,7 @@ footer{
         top: -12%;
     }
 
+    /* powerfull server section */
     .powerfull_server{
         padding: 0px 30px;
         flex-direction: column;
@@ -1530,6 +1602,7 @@ footer{
         width: 280px;
     }
 
+    /* all tool section */
     .all_tool_section{
         padding: 60px 20px;
     }
@@ -1555,7 +1628,7 @@ footer{
         margin: 0px;
     }
 
-
+    /* testimonal section */
     .testimonal_container{
         width: 80%;
     }
@@ -1579,6 +1652,7 @@ footer{
         display: none;
     }
 
+    /* get start section */
     .get_start_section{
         padding: 35px;
     }
@@ -1610,6 +1684,7 @@ footer{
         font-size: 25px;
     }
 
+    /* footer section */
     footer{
         padding: 55px 30px;
     }
@@ -1628,7 +1703,12 @@ footer{
     }
 }
 
+
+/* responsive screen from width 340px to width 469px */
+
 @media screen and (min-width:340px) and (max-width:469px) {
+    
+    /* header section */
     .count_container span{
         /* border: none; */
         padding: 0px;
@@ -1642,27 +1722,39 @@ footer{
     }
 }
 
+
+/* responsive screen from width 470px to width 767px */
+
 @media screen and (min-width:470px) and (max-width:767px) {
+    /* header section */
     .count_container span{
         border: none;
         padding: 0px;
     }
 }
 
+
+/* responsive screen from width 340px to width 499px */
+
 @media screen and (min-width:340px) and (max-width:499px) {
+    
+    /* web host section */
     .web_host_plan_box{
         width: 280px;
     }
 }
 
 
+/* responsive screen from width 500px to width 767px */
 
 @media screen and (min-width:500px) and (max-width:767px) {
-    
+   
+    /* webhost section start */
     .web_host_plan_box{
         width: 325px;
     }
     
+    /* all tool section */
     .all_tool_section{
         padding: 60px 15px;
     }
