@@ -17,6 +17,12 @@ main{
     height: 100%;  
 }
 
+/* container of all sections */
+
+.container_of_all_sections{
+    width: 100%;
+    height: 100%;
+}
 
 /* for get to top */
 #go_to_top{
@@ -172,8 +178,19 @@ header{
 
 .nav_section nav .nav_container{
     display: flex;
-    /* padding: 25px 0px; */
 }
+
+
+/* mob nav section */
+
+.nav_section nav .mob_nav_container{
+    display: none;
+}
+
+.mob_nav_container li .mob_dropdown_list{
+    display: none;
+}
+
 
 .nav_section nav .nav_container > li{
     position: relative;
@@ -1117,7 +1134,7 @@ footer{
     .nav_section nav .menu_bar_icon{
         display: block;
         font-size: 30px;
-        color: black;
+        color: rgb(255, 255, 255);
         display: grid;
         place-items: center;
         cursor: pointer;
@@ -1440,11 +1457,39 @@ footer{
 
     /* nav section section */
     .nav_section{
-        padding: 0px 25px
+        padding: 0px 25px;
     }
 
+    
     .nav_section nav .nav_container{
         display: none;
+    }
+    
+    /* mob nav section */
+
+    .nav_section nav .mob_nav_container{
+        display: block;
+        position: fixed;
+        top: 0%;
+        left: -100%;
+        background-color: black;
+        height: 100vh;
+        overflow-y: auto;
+        width: 50%;
+    }
+
+    .nav_section nav .mob_nav_container li a{
+        width: 100%;
+        padding: 25px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Rajdhani', sans-serif;
+        align-items: center;
+    }
+
+    .nav_section nav .mob_nav_container li a i{
+        font-size: 25px;
     }
 
     /* nav section customer portal button */
